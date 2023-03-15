@@ -1,7 +1,8 @@
-package com.xzq.content.service.mapper;
+package com.xzq.contentService.mapper;
 
-import generator.domain.TeachplanWork;
+import com.xzq.content.model.entity.TeachplanWork;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 谢志强
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-03-14 23:12:12
 * @Entity generator.domain.TeachplanWork
 */
+@Mapper
 public interface TeachplanWorkMapper extends BaseMapper<TeachplanWork> {
 
 }

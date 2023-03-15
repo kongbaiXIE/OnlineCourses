@@ -7,8 +7,18 @@
         <groupId>com.xzq</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>online-courses-api</artifactId>
+    <artifactId>online-courses-content-api</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>com.xzq</groupId>
+            <artifactId>online-courses-content-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xzq</groupId>
+            <artifactId>online-courses-content-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
