@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>online-courses-content</artifactId>
+        <artifactId>online-courses-system</artifactId>
         <groupId>com.xzq</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>online-courses-content-api</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>online-courses-system-api</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.xzq</groupId>
-            <artifactId>online-courses-content-service</artifactId>
+            <artifactId>online-courses-system-model</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.xzq</groupId>
-            <artifactId>online-courses-content-service</artifactId>
+            <artifactId>online-courses-system-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--cloud的基础环境包-->
@@ -58,5 +65,4 @@
             <version>2.0.9</version>
         </dependency>
     </dependencies>
-
 </project>

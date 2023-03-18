@@ -6,7 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="online-courses-parent" />
+      </profile>
+      <profile name="Annotation profile for online-courses-system" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../Environment/apache-maven-3.8.3/maven-repo/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
+        </processorPath>
+        <module name="online-courses-content-model" />
+        <module name="online-courses-system-api" />
+        <module name="online-courses-base" />
+        <module name="online-courses-system-model" />
+        <module name="online-courses-content-service" />
+        <module name="online-courses-content-api" />
+        <module name="online-courses-system-service" />
       </profile>
     </annotationProcessing>
   </component>

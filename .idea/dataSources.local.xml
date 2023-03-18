@@ -11,7 +11,10 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="online_courses_content" />
+          <node kind="schema">
+            <name qname="online-courses-system" />
+            <name qname="online_courses_content" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
