@@ -51,19 +51,19 @@ public class CourseBaseInfoController {
     }
     /**
      * 添加课程基本信息
-     * @param companyId
      * @param addCourseDto
      * @return
      */
     @ApiOperation("新增课程")
     @PostMapping("/course")
-    public CourseBaseInfoDto addCourseBase(@RequestParam Long companyId,
-                                                         @RequestBody @Validated({ValidationGroups.Inster.class}) AddCourseDto addCourseDto){
-        if (companyId < 0){
-            throw new BusinessException(ErrorCode.PARAMS_ERROR);
-        }
+    public CourseBaseInfoDto addCourseBase(@RequestBody @Validated({ValidationGroups.Inster.class}) AddCourseDto addCourseDto){
+        //机构id，由于认证系统没有上线暂时硬编码
+        Long companyId = 1232141425L;
+        //if (companyId < 0){
+        //    throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        //}
         CourseBaseInfoDto courseBase = courseBaseService.createCourseBase(companyId, addCourseDto);
-        if (StringUtils.isEmpty(addCourseDto)){
+        if (StringUtils.isEmpty(courseBase)){
             throw new BusinessException(ErrorCode.SYSTEM_ERROR);
         }
         //return ResultUtil.success(courseBase);
@@ -81,11 +81,19 @@ public class CourseBaseInfoController {
     }
 
     @PutMapping("/course")
-    public CourseBaseInfoDto updateCourseBaseInfo(@RequestBody @Validated EditCourseDto editCourseDto){
-        Long companyId = 1233453L;
+    public CourseBaseInfoDto updateCourseBaseInfo(@RequestBody @Validated({ValidationGroups.Update.class}) EditCourseDto editCourseDto){
+        Long companyId = 1232141425L;
         return courseBaseService.updateCourseBaseInfo(companyId, editCourseDto);
     }
 
+    /**
+     * 删除课程
+     * @param courseId
+     */
+    @DeleteMapping("/course/{courseId}")
+    public void deleteCourseBase(@PathVariable @Validated Long courseId){
+        courseBaseService.deleteCourseBase(courseId);
+    }
 
 
 }

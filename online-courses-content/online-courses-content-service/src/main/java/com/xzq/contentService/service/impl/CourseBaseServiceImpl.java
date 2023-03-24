@@ -1,5 +1,6 @@
 package com.xzq.contentService.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,18 +12,15 @@ import com.xzq.content.model.dto.AddCourseDto;
 import com.xzq.content.model.dto.CourseBaseInfoDto;
 import com.xzq.content.model.dto.EditCourseDto;
 import com.xzq.content.model.dto.QueryCourseParamsDto;
-import com.xzq.content.model.entity.CourseBase;
-import com.xzq.content.model.entity.CourseCategory;
-import com.xzq.content.model.entity.CourseMarket;
-import com.xzq.contentService.mapper.CourseBaseMapper;
-import com.xzq.contentService.mapper.CourseCategoryMapper;
-import com.xzq.contentService.mapper.CourseMarketMapper;
+import com.xzq.content.model.entity.*;
+import com.xzq.contentService.mapper.*;
 import com.xzq.contentService.service.CourseBaseService;
 import com.xzq.contentService.service.CourseMarketService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -46,6 +44,14 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
     @Autowired
     CourseMarketService courseMarketService;
+
+    @Autowired
+    CourseTeacherMapper courseTeacherMapper;
+    @Autowired
+    TeachplanMediaMapper teachplanMediaMapper;
+
+    @Autowired
+    TeachplanMapper teachplanMapper;
 
 
     /**
@@ -167,7 +173,7 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
     @Override
     public CourseBaseInfoDto updateCourseBaseInfo(Long companyId, EditCourseDto editCourseDto) {
-        CourseBase courseBaseUpdate = courseBaseMapper.selectById(editCourseDto.getCourseId());
+        CourseBase courseBaseUpdate = courseBaseMapper.selectById(editCourseDto.getId());
         if (courseBaseUpdate == null){
             throw new BusinessException(ErrorCode.NULL_ERROR,"没有查到该课程");
         }
@@ -177,18 +183,56 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         }
         //将要修改的信息拷贝
         BeanUtils.copyProperties(editCourseDto,courseBaseUpdate);
+        courseBaseUpdate.setChangeDate(LocalDateTime.now());
         int updateById = courseBaseMapper.updateById(courseBaseUpdate);
         if (updateById < 0){
             throw new BusinessException(ErrorCode.SYSTEM_ERROR);
         }
         CourseMarket courseMarket = new CourseMarket();
-        BeanUtils.copyProperties(courseMarket,editCourseDto);
+        BeanUtils.copyProperties(editCourseDto,courseMarket);
         saveMarketCourse(courseMarket);
         
         //查询修改后的课程信息
-        return getCourseBaseInfo(editCourseDto.getCourseId());
+        return getCourseBaseInfo(editCourseDto.getId());
     }
 
+    @Transactional
+    @Override
+    public void deleteCourseBase(Long courseId) {
+        LambdaQueryWrapper<CourseBase> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(CourseBase::getId, courseId);
+        CourseBase courseBase = courseBaseMapper.selectOne(queryWrapper);
+        String status = courseBase.getStatus();
+        if (!status.equals("203001")) {
+            throw new BusinessException(ErrorCode.SYSTEM_ERROR,"课程未处于未提交状态，无法删除");
+        }
+        //courseteacher 找courseid再删
+        LambdaQueryWrapper<CourseTeacher> query3 = new LambdaQueryWrapper<>();
+        query3.eq(CourseTeacher::getCourseId, courseId);
+        courseTeacherMapper.delete(query3);
+
+        //teachplanmedia 找courseid再删
+        LambdaQueryWrapper<TeachplanMedia> query2 = new LambdaQueryWrapper<>();
+        query2.eq(TeachplanMedia::getCourseId, courseId);
+        teachplanMediaMapper.delete(query2);
+
+        //teachplan 找courseid再删
+        LambdaQueryWrapper<Teachplan> query1 = new LambdaQueryWrapper<>();
+        query1.eq(Teachplan::getCourseId, courseId);
+        teachplanMapper.delete(query1);
+
+        //coursebase 删id
+        //coursemarket 删id
+        Long id = courseBase.getId();
+        courseMarketMapper.deleteById(id);
+        courseBaseMapper.deleteById(id);
+    }
+
+    /**
+     * 添加和修改课程营销信息
+     * @param courseMarket
+     * @return
+     */
     public int saveMarketCourse(CourseMarket courseMarket){
         String charge = courseMarket.getCharge();
         //收费课程必须写价格且价格大于0
@@ -211,7 +255,7 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         }
         boolean b = courseMarketService.saveOrUpdate(courseMarket);
 
-        return b?1:-1;
+        return b? 1:-1;
 
     }
 }

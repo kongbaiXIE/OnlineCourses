@@ -1,3 +1,325 @@
+GET http://localhost:63040/content/course-category/tree-nodes
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T161058.200.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T161022.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T160257.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T160017.400.json
+
+###
+
+GET http://localhost:63040/content/course-category/tree-nodes
+
+<> 2023-03-20T160011.200.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155946.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155741.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155657.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155416.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155413.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155350.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T155345.400.json
+
+###
+
+POST http://localhost:63040/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-20T154056.400.json
+
+###
+
 POST http://localhost:63040/content/course/list?pageNum=1&pageSize=2
 Content-Type: application/json
 

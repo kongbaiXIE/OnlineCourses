@@ -9,5 +9,5 @@ import lombok.Data;
 public class EditCourseDto extends AddCourseDto {
 
     //课程id
-    private Long CourseId;
+    private Long id;
 }

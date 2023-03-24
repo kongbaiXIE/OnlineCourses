@@ -31,4 +31,74 @@
         status,is_preview,create_date,
         change_date
     </sql>
+    <resultMap id="treeNodeResultMap" type="com.xzq.content.model.dto.TeachplanDto">
+        <!--一级映射-->
+        <id property="id" column="one_id" jdbcType="BIGINT"/>
+        <result property="pname" column="one_pname" jdbcType="VARCHAR"/>
+        <result property="parentid" column="one_parentid" jdbcType="BIGINT"/>
+        <result property="grade" column="one_grade" jdbcType="SMALLINT"/>
+        <result property="mediaType" column="one_mediaType" jdbcType="VARCHAR"/>
+        <result property="startTime" column="one_startTime" jdbcType="TIMESTAMP"/>
+        <result property="endTime" column="one_endTime" jdbcType="TIMESTAMP"/>
+        <result property="orderby" column="one_orderby" jdbcType="INTEGER"/>
+        <result property="courseId" column="one_courseId" jdbcType="BIGINT"/>
+        <result property="coursePubId" column="one_coursePubId" jdbcType="BIGINT"/>
+        <!--一级中包含多个二级数据-->
+        <collection property="teachPlanTreeNodes" ofType="com.xzq.content.model.dto.TeachplanDto">
+            <id property="id" column="two_id" jdbcType="BIGINT"/>
+            <result property="pname" column="two_pname" jdbcType="VARCHAR"/>
+            <result property="parentid" column="two_parentid" jdbcType="BIGINT"/>
+            <result property="grade" column="two_grade" jdbcType="SMALLINT"/>
+            <result property="mediaType" column="two_mediaType" jdbcType="VARCHAR"/>
+            <result property="startTime" column="two_startTime" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="two_endTime" jdbcType="TIMESTAMP"/>
+            <result property="orderby" column="two_orderby" jdbcType="INTEGER"/>
+            <result property="courseId" column="two_courseId" jdbcType="BIGINT"/>
+            <result property="coursePubId" column="two_coursePubId" jdbcType="BIGINT"/>
+            <association property="teachplanMedia" javaType="com.xzq.content.model.entity.TeachplanMedia">
+                <id column="teachplanMeidaId"   property="id" />
+                <result column="mediaFilename"   property="mediaFilename" />
+                <result column="mediaId"   property="mediaId" />
+                <result column="two_id"   property="teachplanId" />
+                <result column="two_courseId"   property="courseId" />
+                <result column="two_coursePubId"   property="coursePubId" />
+            </association>
+        </collection>
+    </resultMap>
+    <!--课程计划树型结构查询-->
+    <select id="selectTreeNodes" resultMap="treeNodeResultMap" parameterType="long">
+        select 	one.id            one_id,
+                  one.pname         one_pname,
+                  one.parentid      one_parentid,
+                  one.grade         one_grade,
+                  one.media_type    one_mediaType,
+                  one.start_time    one_startTime,
+                  one.end_time      one_endTime,
+                  one.orderby       one_orderby,
+                  one.course_id     one_courseId,
+                  one.course_pub_id one_coursePubId,
+
+                  two.id            two_id,
+                  two.pname         two_pname,
+                  two.parentid      two_parentid,
+                  two.grade         two_grade,
+                  two.media_type    two_mediaType,
+                  two.start_time    two_stratTime,
+                  two.end_time      two_endTime,
+                  two.orderby       two_orderby,
+                  two.course_id     two_courseId,
+                  two.course_pub_id two_coursePubId,
+
+                  m.id teachplanMediaId,
+                  m.media_id mediaId,
+                  m.teachplan_id teachplanId,
+                  m.media_fileName mediaFileName
+        from teachplan one
+                 LEFT JOIN teachplan two on two.parentid = one.id
+                 LEFT JOIN teachplan_media m on m.teachplan_id = two.id
+        where one.parentid = 0
+          and one.course_id = #{value}
+        order by one.orderby,
+                 two.orderby
+    </select>
 </mapper>
