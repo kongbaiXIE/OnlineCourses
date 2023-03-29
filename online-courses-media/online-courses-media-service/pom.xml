@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>online-courses-content</artifactId>
+        <artifactId>online-courses-media</artifactId>
         <groupId>com.xzq</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>online-courses-content-service</artifactId>
+    <artifactId>online-courses-media-service</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,10 +17,15 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.xzq</groupId>
-            <artifactId>online-courses-base</artifactId>
+            <artifactId>online-courses-media-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
         <!-- MySQL 驱动 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -39,20 +44,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--添加Nacos 注册中心-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-            <version>3.1.0</version>
-        </dependency>
         <!-- 排除 Spring Boot 依赖的日志包冲突 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,16 +55,22 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <!-- Spring Boot 集成 log4j2 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+        <!--添加 minio 分布式文件系统-->
         <dependency>
-            <groupId>com.xzq</groupId>
-            <artifactId>online-courses-content-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>8.4.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.8.1</version>
         </dependency>
     </dependencies>
 </project>

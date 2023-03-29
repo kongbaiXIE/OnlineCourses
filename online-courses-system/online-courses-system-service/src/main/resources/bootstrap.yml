@@ -1,26 +1,17 @@
-#server:
-#  servlet:
-#    context-path: /system
-#  port: 63110
-#微服务配置
 spring:
   application:
-    name: system-api
+    name: system-service
   cloud:
     nacos:
       server-addr: 47.101.196.166:8848
       discovery:
-        namespace: xcdev
+        namespace: ${spring.profiles.active}
         group: xuecheng-plus-project
       config:
         namespace: xcdev
         group: xuecheng-plus-project
         file-extension: yaml
         refresh-enabled: true
-        extension-configs:
-          - data-id: system-service-${spring.profiles.active}.yaml
-            group: xuecheng-plus-project
-            refresh: true
         shared-configs:
           - data-id: logging-${spring.profiles.active}.yaml
             group: common
@@ -32,9 +23,6 @@ spring:
 #    url: jdbc:mysql://127.0.0.1:3306/online-courses-system?serverTimezone=UTC&userUnicode=true&useSSL=false&
 #    username: root
 #    password: root
-#  mvc:
-#    pathmatch:
-#      matching-strategy: ANT_PATH_MATCHER
-# 日志文件配置路径
+## 日志文件配置路径
 #logging:
 #  config: classpath:log4j2-dev.xml

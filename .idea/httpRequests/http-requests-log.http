@@ -1,3 +1,505 @@
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-26T161956.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T151405.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T135730.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T004813.503.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T004712.200.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T004624.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T004620.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+//#{
+//#  "charge": "201001",
+//#  "price": 10,
+//#  "originalPrice":100,
+//#  "qq": "22333",
+//#  "wechat": "223344",
+//#  "phone": "13333333",
+//#  "validDays": 365,
+//#  "mt": "1-1",
+//#  "st": "1-1-1",
+//#  "name": "测试课程",
+//#  "pic": "fdsf",
+//#  "teachmode": "200002",
+//#  "users": "初级人员",
+//#  "tags": "tagstagstags",
+//#  "grade": "204001",
+//#  "description": "java网络编程高级java网络编程高级java网络编程高级"
+//#}
+
+<> 2023-03-25T004608.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+{:
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus": ""
+}:
+
+<> 2023-03-25T004535.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T004443.503.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-25T004226.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T003746.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T003720.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T003708.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T003654.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-25T002928.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-24T213545.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-24T213541.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-24T213402.503.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNum=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus":""
+}
+
+<> 2023-03-24T213356.200.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-24T213351.503.json
+
+###
+
+POST http://localhost:63010/content/course
+Content-Type: application/json
+
+<> 2023-03-24T213330.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+<> 2023-03-24T213258.503.json
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+###
+
+POST http://localhost:63010/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice":100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "测试课程",
+  "pic": "fdsf",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "tagstagstags",
+  "grade": "204001",
+  "description": "java网络编程高级java网络编程高级java网络编程高级"
+}
+
+###
+
 GET http://localhost:63040/content/course-category/tree-nodes
 
 ###

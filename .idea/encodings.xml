@@ -11,6 +11,16 @@
     <file url="file://$PROJECT_DIR$/online-courses-content/online-courses-content-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-courses-content/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-courses-content/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/online-courses-media/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-courses-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-courses-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/online-courses-system/online-courses-system-api/src/main/java" charset="UTF-8" />

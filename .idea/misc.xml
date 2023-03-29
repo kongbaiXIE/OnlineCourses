@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/online-courses-content/pom.xml" />
         <option value="$PROJECT_DIR$/online-courses-api/pom.xml" />
         <option value="$PROJECT_DIR$/online-courses-system/pom.xml" />
+        <option value="$PROJECT_DIR$/online-courses-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/online-courses-media/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,6 +6,8 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+import java.util.Collections;
+
 /**
  * 添加跨域过滤器
  */
@@ -17,8 +19,9 @@ public class GlobalCorsConfig {
     @Bean
     public CorsFilter corsFilter(){
         CorsConfiguration config = new CorsConfiguration();
-        //允许白名单域名进行跨域调用
-        config.addAllowedOrigin("*");
+        config.setAllowedOriginPatterns(Collections.singletonList("*"));
+        ////允许白名单域名进行跨域调用
+        //config.addAllowedOrigin("*");
         //允许跨越发送cookie
         config.setAllowCredentials(true);
         //放行全部原始头信息

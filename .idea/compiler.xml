@@ -15,12 +15,16 @@
           <entry name="$PROJECT_DIR$/../../../Environment/apache-maven-3.8.3/maven-repo/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
         </processorPath>
         <module name="online-courses-content-model" />
+        <module name="online-courses-media-api" />
         <module name="online-courses-system-api" />
         <module name="online-courses-base" />
         <module name="online-courses-system-model" />
         <module name="online-courses-content-service" />
         <module name="online-courses-content-api" />
         <module name="online-courses-system-service" />
+        <module name="online-courses-media-service" />
+        <module name="online-courses-media-model" />
+        <module name="online-courses-gateway" />
       </profile>
     </annotationProcessing>
   </component>
