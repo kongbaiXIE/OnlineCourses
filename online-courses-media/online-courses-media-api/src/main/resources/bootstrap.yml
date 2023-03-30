@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: media-api
+  cloud:
+    nacos:
+      server-addr: 47.101.196.166:8848
+      discovery:
+        namespace: xcdev
+        group: xuecheng-plus-project
+      config:
+        namespace: xcdev
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+        extension-configs:
+          - data-id: media-service-${spring.profiles.active}.yaml
+            group: xuecheng-plus-project
+            refresh: true
+        shared-configs:
+          - data-id: logging-${spring.profiles.active}.yaml
+            group: common
+            refresh: true
+  profiles:
+    active: dev
+logging:
+  config: classpath:log4j2-dev.xml

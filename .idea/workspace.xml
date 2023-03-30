@@ -4,129 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6df5e67-cb33-4185-969b-fddd0ddafb50" name="Changes" comment="[A] 添加课程计划的查询，添加，删除，章节的上移和下移功能">
-      <change afterPath="$PROJECT_DIR$/online-courses-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-gateway/src/main/java/com/xzq/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/java/com/xzq/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-model/src/main/java/com/xzq/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/java/com/xzq/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online-courses-media/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8ae16c7-4481-4f10-836d-075470b3ef37.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8ae16c7-4481-4f10-836d-075470b3ef37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f6df5e67-cb33-4185-969b-fddd0ddafb50" name="Changes" comment="[A] 实现网关gateway对nacos配置文件的调用，所有接口都可以通过网关根据配置文件进行访问">
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/mapper/MediaFilesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/mapper/MediaProcessHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/mapper/MediaProcessMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/mapper/MqMessageHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/resources/mapper/MqMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-test/xc-content-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-test/xc-content-api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/common/BaseResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/common/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/common/PageRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/common/ResultUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/exeception/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-base/target/classes/com/xzq/base/exeception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/com/xzq/contentApi/ContentApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/com/xzq/contentApi/config/Knife4jConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/com/xzq/contentApi/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/com/xzq/contentApi/controller/CourseBaseInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/com/xzq/contentApi/controller/CourseCategoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-api/target/classes/log4j2-dev.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/dto/AddCourseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/dto/CourseBaseInfoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/dto/CourseCategoryTreeDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/dto/QueryCourseParamsDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CourseAudit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CourseBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CourseCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CourseMarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CoursePublish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CoursePublishPre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/CourseTeacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/MqMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/MqMessageHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/Teachplan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/TeachplanMedia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-model/target/classes/com/xzq/content/model/entity/TeachplanWork.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/ContentServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CourseBaseMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CourseCategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CourseMarketMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CoursePublishMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CoursePublishPreMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/CourseTeacherMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/MqMessageHistoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/MqMessageMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/TeachplanMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/TeachplanMediaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/mapper/TeachplanWorkMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CourseBaseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CourseCategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CourseMarketService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CoursePublishPreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CoursePublishService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/CourseTeacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/MqMessageHistoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/MqMessageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/TeachplanMediaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/TeachplanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/TeachplanWorkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CourseBaseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CourseCategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CourseMarketServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CoursePublishPreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CoursePublishServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/CourseTeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/MqMessageHistoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/MqMessageServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/TeachplanMediaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/TeachplanServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/com/xzq/contentService/service/impl/TeachplanWorkServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/log4j2-dev.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CourseBaseMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CourseCategoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CourseMarketMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CoursePublishMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CoursePublishPreMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/CourseTeacherMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/MqMessageHistoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/MqMessageMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/TeachplanMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/TeachplanMediaMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/online-courses-content-service/target/classes/mapper/TeachplanWorkMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-content/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-content/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/src/main/java/com/xzq/systemApi/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/src/main/java/com/xzq/systemApi/config/GlobalCorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/com/xzq/systemApi/SystemApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/com/xzq/systemApi/config/GlobalCorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/com/xzq/systemApi/config/LocalDateTimeConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/com/xzq/systemApi/controller/DictionaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-api/target/classes/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-gateway/src/main/resources/log4j2-dev.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-model/target/classes/com/xzq/system/model/entity/Dictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/com/xzq/systemService/SystemServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/com/xzq/systemService/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/com/xzq/systemService/mapper/DictionaryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/com/xzq/systemService/service/DictionaryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/com/xzq/systemService/service/impl/DictionaryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/log4j2-dev.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-courses-system/online-courses-system-service/target/classes/mapper/DictionaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/java/com/xzq/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/java/com/xzq/media/service/MediaServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-model/src/main/java/com/xzq/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-api/src/main/java/com/xzq/media/api/MediaApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-courses-media/online-courses-media-service/src/main/java/com/xzq/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +38,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -164,46 +67,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Java项目/在线教育/OnlineCourses/online-courses-gateway/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34040046&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0db1e317574f9a6baf027a2d8c1720fa&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "F:/Java项目/在线教育/OnlineCourses/online-courses-media/online-courses-media-service/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.34040046",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "b8fd77a3f7d7ebd86320140fd199a55e",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-media\online-courses-media-service\src\main\resources" />
+      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-media\online-courses-media-api\src\main\resources" />
       <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-gateway\src\main\resources" />
       <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-gateway\src\main\java\com\xzq\gateway" />
       <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-content\online-courses-content-service\src\main\resources" />
-      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-system\online-courses-system-api\src\main\resources" />
-      <recent name="F:\Java项目\在线教育\OnlineCourses\api-test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-media\online-courses-media-service\src\main\java\com\xzq\media\service\service" />
+      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-media\online-courses-media-service\src\main\java\com\xzq\media\service\mapper" />
+      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-media\online-courses-media-model\src\main\java\com\xzq\media\model\entity" />
       <recent name="F:\Java项目\在线教育\OnlineCourses" />
       <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-system\online-courses-system-service\src\main\resources" />
-      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-system\online-courses-system-service\src\main\java\com\xzq\systemService\service" />
-      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-system\online-courses-system-service\src\main\java\com\xzq\systemService\mapper" />
-      <recent name="F:\Java项目\在线教育\OnlineCourses\online-courses-system\online-courses-system-model\src\main\java\com\xzq\systemModel\entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xzq.contentApi.config" />
@@ -217,10 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.xc-content-api | 新增课程">
-    <configuration name="xc-content-api | 课程查询列表" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" index="4" requestIdentifier="课程查询列表" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="HTTP Request.xc-content-api | 课程查询列表">
     <configuration name="xc-content-api | 查询课程信息" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" requestIdentifier="查询课程信息" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -237,6 +137,9 @@
       <method v="2" />
     </configuration>
     <configuration name="xc-content-api | 新增课程" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" index="3" requestIdentifier="新增课程" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="xc-content-api | 课程查询列表" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" index="4" requestIdentifier="课程查询列表" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ContentApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -288,7 +191,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.xc-content-api | 新增课程" />
+      <item itemvalue="HTTP Request.xc-content-api | 课程查询列表" />
       <item itemvalue="Spring Boot.SystemApiApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ContentServiceApplication" />
@@ -328,7 +231,8 @@
       <workItem from="1679989757009" duration="965000" />
       <workItem from="1680057183726" duration="1357000" />
       <workItem from="1680092279316" duration="2354000" />
-      <workItem from="1680096451348" duration="2497000" />
+      <workItem from="1680096451348" duration="3695000" />
+      <workItem from="1680143999487" duration="3622000" />
     </task>
     <task id="LOCAL-00001" summary="[A] 搭建项目基本环境">
       <created>1678844414434</created>
@@ -372,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679634808747</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[A] 实现网关gateway对nacos配置文件的调用，所有接口都可以通过网关根据配置文件进行访问">
+      <created>1680099276403</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680099276403</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +316,7 @@
     <MESSAGE value="[A] 搭建项目基本环境" />
     <MESSAGE value="[A] 添加课程分页条件查询，课程创建，课程修改" />
     <MESSAGE value="[A] 添加课程计划的查询，添加，删除，章节的上移和下移功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="[A] 添加课程计划的查询，添加，删除，章节的上移和下移功能" />
+    <MESSAGE value="[A] 实现网关gateway对nacos配置文件的调用，所有接口都可以通过网关根据配置文件进行访问" />
+    <option name="LAST_COMMIT_MESSAGE" value="[A] 实现网关gateway对nacos配置文件的调用，所有接口都可以通过网关根据配置文件进行访问" />
   </component>
 </project>

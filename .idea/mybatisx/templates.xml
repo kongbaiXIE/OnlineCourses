@@ -68,8 +68,24 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="Dictionary" />
-                  <option name="tableName" value="dictionary" />
+                  <option name="className" value="MediaFiles" />
+                  <option name="tableName" value="media_files" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="MediaProcess" />
+                  <option name="tableName" value="media_process" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="MediaProcessHistory" />
+                  <option name="tableName" value="media_process_history" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="MqMessage" />
+                  <option name="tableName" value="mq_message" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="MqMessageHistory" />
+                  <option name="tableName" value="mq_message_history" />
                 </TableUIInfo>
               </list>
             </option>
